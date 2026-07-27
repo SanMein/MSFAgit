@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЧВК «MSF-043» — Military Special Forces</title>
+    <meta name="description" content="Частная военная компания MSF-043. Пять корпусов, семь грейдов, одна дисциплина. Набор открыт." />
+    <link rel="icon" type="image/png" href="/emblems/msf.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+
+    <!-- ═══ ПРЕЛОАДЕР ═══ -->
+    <div id="pre" aria-hidden="true">
+      <div class="pre-core">
+        <div class="pre-emb"><img src="/emblems/msf.png" alt="" /></div>
+        <div class="pre-txt m">ПРОВЕРКА ДОПУСКА<span class="pre-dots"><i>.</i><i>.</i><i>.</i></span></div>
+        <div class="pre-bar"><span></span></div>
+        <div class="pre-sub m">MSF-043 // SECURE CHANNEL</div>
+      </div>
+    </div>
+
+    <!-- ═══ КУРСОР-СВЕЧЕНИЕ ═══ -->
+    <div id="glow" aria-hidden="true"></div>
+    <div id="progress" aria-hidden="true"><span></span></div>
+
+    <!-- ═══ НАВИГАЦИЯ ═══ -->
+    <header id="nav">
+      <a class="nav-brand" href="#top" aria-label="MSF-043 — на главную">
+        <span class="nav-emb"><img src="/emblems/msf.png" alt="Эмблема ЧВК MSF-043" /></span>
+        <span class="nav-name">
+          <b>MSF-043</b>
+          <i class="m">MILITARY SPECIAL FORCES</i>
+        </span>
+      </a>
+      <nav class="nav-links m" aria-label="Основная навигация">
+        <a href="#doctrine">Доктрина</a>
+        <a href="#corps">Корпуса</a>
+        <a href="#grades">Карбогрейд</a>
+        <a href="#units">Формирования</a>
+        <a href="#skivr">СКИВР</a>
+        <a href="#codex">Кодекс</a>
+      </nav>
+      <div class="nav-right">
+        <span class="nav-status m"><i></i>НАБОР ОТКРЫТ</span>
+        <a class="btn btn-solid nav-cta" href="#join">Вступить</a>
+        <button id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <!-- ═══ МОБИЛЬНОЕ МЕНЮ ═══ -->
+    <div id="mmenu" aria-hidden="true">
+      <nav class="m">
+        <a href="#doctrine">Доктрина</a>
+        <a href="#corps">Корпуса</a>
+        <a href="#grades">Карбогрейд</a>
+        <a href="#units">Формирования</a>
+        <a href="#skivr">СКИВР</a>
+        <a href="#codex">Кодекс</a>
+        <a href="#join" class="mmenu-cta">Вступить в ряды</a>
+      </nav>
+      <div class="mmenu-foot m">MSF-043 // EST. 2026</div>
+    </div>
+
+    <main id="top">
+
+      <!-- ═══ HERO ═══ -->
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <img src="/img/hero.jpg" alt="" />
+          <div class="hero-veil"></div>
+          <div class="hero-grid"></div>
+          <div class="hero-scan"></div>
+        </div>
+
+        <div class="hero-inner">
+          <div class="hero-txt">
+            <div class="overline m rv">Частная военная компания <span class="ov-sep">//</span> ратифицировано 23.07.2026</div>
+            <h1 class="rv" data-d="1">MSF<em>-043</em></h1>
+            <div class="hero-sub m rv" data-d="2">MILITARY&nbsp;SPECIAL&nbsp;FORCES</div>
+            <p class="hero-lead rv" data-d="3">Структура вместо хаоса. Пять корпусов, семь грейдов и один стандарт дисциплины, обязательный для каждого — от&nbsp;учебного статуса до Генерального Директора.</p>
+            <div class="hero-tw m rv" data-d="4"><span class="tw-pre">&gt;_</span><span id="tw"></span><span class="tw-caret"></span></div>
+            <div class="hero-cta rv" data-d="5">
+              <a class="btn btn-solid btn-big" href="#join">Подать рапорт на вступление</a>
+              <a class="btn btn-ghost btn-big" href="#corps">Изучить структуру</a>
+            </div>
+          </div>
+
+          <div class="hero-emb rv" data-d="3" id="heroEmb" aria-hidden="true">
+            <div class="he-ring"></div>
+            <div class="he-ring2"></div>
+            <img src="/emblems/msf.png" alt="Эмблема ЧВК MSF-043" />
+            <div class="he-tag m he-tag-1">043</div>
+            <div class="he-tag m he-tag-2">ACTIVE</div>
+          </div>
+        </div>
+
+        <div class="hero-stats rv" data-d="6">
+          <div class="hstat"><b><span class="cnt" data-n="5">0</span></b><i class="m">корпусов служб</i></div>
+          <div class="hstat"><b><span class="cnt" data-n="7">0</span></b><i class="m">боевых грейдов</i></div>
+          <div class="hstat"><b><span class="cnt" data-n="4">0</span></b><i class="m">спецформирования</i></div>
+          <div class="hstat"><b><span class="cnt" data-n="20">0</span></b><i class="m">минусов до расторжения</i></div>
+        </div>
+      </section>
+
+      <!-- ═══ БЕГУЩАЯ СТРОКА ═══ -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track m">
+          <span>Дисциплина</span><i>//</i><span>Субординация</span><i>//</i><span>Карбогрейд</span><i>//</i><span>SSC</span><i>//</i><span>RSC</span><i>//</i><span>MSC</span><i>//</i><span>TSC</span><i>//</i><span>ERS</span><i>//</i><span>СКИВР</span><i>//</i><span>Universal Strike Force</span><i>//</i><span>Double MilSec</span><i>//</i><span>Feld Demons</span><i>//</i><span>Military Special Forces — 043</span><i>//</i>
+          <span>Дисциплина</span><i>//</i><span>Субординация</span><i>//</i><span>Карбогрейд</span><i>//</i><span>SSC</span><i>//</i><span>RSC</span><i>//</i><span>MSC</span><i>//</i><span>TSC</span><i>//</i><span>ERS</span><i>//</i><span>СКИВР</span><i>//</i><span>Universal Strike Force</span><i>//</i><span>Double MilSec</span><i>//</i><span>Feld Demons</span><i>//</i><span>Military Special Forces — 043</span><i>//</i>
+        </div>
+      </div>
+
+      <!-- ═══ 01 ДОКТРИНА ═══ -->
+      <section id="doctrine" class="sec">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <div class="sec-kicker m">01 // Общие положения</div>
+            <h2>Доктрина<br /><em>Компании</em></h2>
+          </div>
+
+          <div class="doc-grid">
+            <blockquote class="doc-quote rv">
+              <p>«Обеспечение оперативной эффективности, безопасности, субординации и&nbsp;устойчивого внутреннего порядка»</p>
+              <cite class="m">Регламент ЧВК «MSF-043» — Раздел I, п. I.1</cite>
+            </blockquote>
+            <div class="doc-pillars">
+              <div class="pillar hud rv" data-d="1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v4M12 18.5v4M1.5 12h4M18.5 12h4"/></svg>
+                <h3>Эффективность</h3>
+                <p>Каждый оперативник — боевая единица с подтверждённой квалификацией. Баллы за операции, пороги повышения, никакой случайной карьеры.</p>
+              </div>
+              <div class="pillar hud rv" data-d="2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 20 6v6c0 5-3.5 8.2-8 9.5C7.5 20.2 4 17 4 12V6l8-3.5Z"/><path d="m8.7 11.8 2.3 2.3 4.3-4.6"/></svg>
+                <h3>Безопасность</h3>
+                <p>Протоколы огневого контакта, уровни доступа и контроль СКИВР исключают самовольство и утечки оперативной информации.</p>
+              </div>
+              <div class="pillar hud rv" data-d="3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-6l8 3 8-3v6"/><path d="m12 2 3 6 6 .8-4.5 4.2 1.2 6L12 16l-5.7 3 1.2-6L3 8.8 9 8l3-6Z"/></svg>
+                <h3>Субординация</h3>
+                <p>Приказ выполняется беспрекословно, вопросы — после миссии. Обжалование предусмотрено уставом, спор в строю — нет.</p>
+              </div>
+              <div class="pillar hud rv" data-d="4">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l4 4v14H4V7l4-4Z"/><path d="M8 3v4h12"/><path d="M8 13h8M8 17h5"/></svg>
+                <h3>Порядок</h3>
+                <p>Единый Регламент, иерархия документов, тикет-система, единый стандарт позывных и коммуникации для всех категорий лиц.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hier rv">
+            <div class="hier-note m">Иерархия документов — при противоречии действует документ более высокого уровня</div>
+            <div class="hier-rows">
+              <div class="hrow" style="--w:100%"><span class="m">Уровень I</span><b>Приказы Директоров</b></div>
+              <div class="hrow" style="--w:82%"><span class="m">Уровень II</span><b>Регламент</b></div>
+              <div class="hrow" style="--w:64%"><span class="m">Уровень III</span><b>Положения</b></div>
+              <div class="hrow" style="--w:46%"><span class="m">Уровень IV</span><b>Инструкции и руководства</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 02 КОРПУСА ═══ -->
+      <section id="corps" class="sec sec-alt">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <div class="sec-kicker m">02 // Линейные службы</div>
+            <h2>Пять корпусов.<br /><em>Одна машина.</em></h2>
+            <p class="sec-lead">Корпусная принадлежность определяет специализацию, допуски и задачи оперативника. Рост внутри корпуса — последовательный, от уровня к уровню, через баллы и подтверждённые навыки.</p>
+          </div>
+
+          <div class="corps-grid">
+            <article class="corp hud rv" data-d="1">
+              <div class="corp-top">
+                <svg class="corp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 14 6l4 4L7 21H3v-4Z"/><path d="m13 7 2-2 4 4-2 2"/><path d="M17 3h4v4"/></svg>
+                <div><h3>SSC</h3><div class="corp-en m">Strike Service Corps</div></div>
+                <span class="corp-tag m">Штурм</span>
+              </div>
+              <p>Основной боевой компонент. Передовая линия соприкосновения: захват, удержание и зачистка объектов, огневое давление на противника.</p>
+              <ul class="lvl m">
+                <li><b>SSC-1</b><span>Стажёр</span></li>
+                <li><b>SSC-2</b><span>Штатный</span></li>
+                <li><b>SSC-3</b><span>Пулемётчик</span></li>
+                <li><b>SSC-4</b><span>Командир корпуса</span></li>
+              </ul>
+            </article>
+
+            <article class="corp hud rv" data-d="2">
+              <div class="corp-top">
+                <svg class="corp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/></svg>
+                <div><h3>RSC</h3><div class="corp-en m">Recon Service Corps</div></div>
+                <span class="corp-tag m">Разведка</span>
+              </div>
+              <p>Высокоточный огонь на средних и дальних дистанциях, скрытое наблюдение, сбор разведданных и корректировка действий подразделений.</p>
+              <ul class="lvl m">
+                <li><b>RSC-1</b><span>Разведчик</span></li>
+                <li><b>RSC-2</b><span>Снайпер</span></li>
+                <li><b>RSC-3</b><span>Марксман</span></li>
+                <li><b>RSC-4</b><span>Командир корпуса</span></li>
+              </ul>
+            </article>
+
+            <article class="corp hud rv" data-d="3">
+              <div class="corp-top">
+                <svg class="corp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6V3Z"/></svg>
+                <div><h3>MSC</h3><div class="corp-en m">Medical Service Corps</div></div>
+                <span class="corp-tag m">Медицина</span>
+              </div>
+              <p>Сохранение жизни и боеспособности личного состава: помощь под огнём, стабилизация раненых, эвакуация и приоритизация.</p>
+              <ul class="lvl m">
+                <li><b>MSC-1</b><span>Санитар</span></li>
+                <li><b>MSC-2</b><span>Парамедик</span></li>
+                <li><b>MSC-3</b><span>Командир корпуса</span></li>
+              </ul>
+            </article>
+
+            <article class="corp hud rv" data-d="4">
+              <div class="corp-top">
+                <svg class="corp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4 1 2-3.4-2-1.6c.1-.4.1-.8.1-1.2Z"/></svg>
+                <div><h3>TSC</h3><div class="corp-en m">Technical Service Corps</div></div>
+                <span class="corp-tag m">Техника</span>
+              </div>
+              <p>Мобильность и огневая поддержка: наземная и воздушная техника, инженерные задачи, боевые модули, исправность парка.</p>
+              <ul class="lvl m">
+                <li><b>TSC-1</b><span>Механик</span></li>
+                <li><b>TSC-2</b><span>Инженер</span></li>
+                <li><b>TSC-3</b><span>Пилот</span></li>
+                <li><b>TSC-4</b><span>Командир корпуса</span></li>
+              </ul>
+            </article>
+
+            <article class="corp hud rv" data-d="5">
+              <div class="corp-top">
+                <svg class="corp-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 4 5.6 4 9s-1.4 6.5-4 9c-2.6-2.5-4-5.6-4-9s1.4-6.5 4-9Z"/></svg>
+                <div><h3>ERS</h3><div class="corp-en m">External Relations Service</div></div>
+                <span class="corp-tag m">Дипломатия</span>
+              </div>
+              <p>Тыловой дипломатический компонент: внешние связи, контрактная база, рекрутинг, переговоры и координация с субъектами.</p>
+              <ul class="lvl m">
+                <li><b>ERS-1</b><span>Офицер по связям</span></li>
+                <li><b>ERS-2</b><span>Офицер опер. связей</span></li>
+                <li><b>ERS-3</b><span>Дипломатический офицер</span></li>
+              </ul>
+            </article>
+
+            <aside class="corp corp-note rv" data-d="6">
+              <div class="cnote-big">XXX-N</div>
+              <p>Формат корпусного уровня. Пороги повышения: <b>20</b> баллов до второго уровня, <b>65</b> — до третьего, <b>110</b> — до четвёртого.</p>
+              <p class="cnote-small m">Для MSC максимум — MSC-3 // 90 баллов</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 03 КАРБОГРЕЙД ═══ -->
+      <section id="grades" class="sec">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <div class="sec-kicker m">03 // Система оценки</div>
+            <h2>Карбогрейд —<br /><em>твой вес в системе</em></h2>
+            <p class="sec-lead">Двухкомпонентная система: основной боевой грейд и корпусной уровень. Повышение — баллами за активность, дисциплину и заслуги. Понижение — штрафами.</p>
+          </div>
+
+          <div class="grade hud rv">
+            <div class="grade-tabs m" role="tablist" aria-label="Грейды">
+              <button class="gt" data-g="ky" role="tab">Ку</button>
+              <button class="gt on" data-g="k1" role="tab">K1</button>
+              <button class="gt" data-g="k2" role="tab">K2</button>
+              <button class="gt" data-g="k3" role="tab">K3</button>
+              <button class="gt" data-g="k4" role="tab">K4</button>
+              <button class="gt" data-g="k5" role="tab">K5</button>
+              <button class="gt" data-g="k6" role="tab">K6</button>
+            </div>
+            <div class="grade-panel" id="gpanel" aria-live="polite">
+              <div class="gp-top">
+                <span class="gp-tag m" id="gpTag"></span>
+                <h3 id="gpTitle"></h3>
+                <p id="gpDesc"></p>
+                <ul id="gpPts" class="gp-pts"></ul>
+              </div>
+              <div class="gp-side">
+                <div class="gp-grade m" id="gpGrade">K1</div>
+                <div class="gp-next m" id="gpNext"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grade-sub">
+            <div class="thresh rv">
+              <h4 class="m">Пороги повышения</h4>
+              <div class="trow m"><span>K1 → K2</span><b>15 баллов</b></div>
+              <div class="trow m"><span>K2 → K3</span><b>45 баллов</b></div>
+              <div class="trow m"><span>K3 → K4</span><b>90 + доступ γάμμα</b></div>
+              <div class="trow m"><span>K4 → K5</span><b>150 + заслуги · βῆτα</b></div>
+              <div class="trow m"><span>K5 → K6</span><b>220 + заслуги</b></div>
+              <p class="tnote">До 5 баллов за операцию, до 3 — за учебное мероприятие. Начисление — только Генеральным или Операционным Директором.</p>
+            </div>
+
+            <div class="minus rv" data-d="2">
+              <h4 class="m">Шкала минусов <span class="minus-burn">обнуление — 1-го числа месяца</span></h4>
+              <div class="mladder">
+                <div class="mstep"><b class="m">5</b><span>понижение корпуса</span></div>
+                <div class="mstep"><b class="m">10</b><span>понижение грейда</span></div>
+                <div class="mstep"><b class="m">14</b><span>понижение корпуса</span></div>
+                <div class="mstep"><b class="m">17</b><span>понижение грейда</span></div>
+                <div class="mstep"><b class="m">19</b><span>понижение корпуса</span></div>
+                <div class="mstep mfinal"><b class="m">20</b><span>расторжение контракта</span></div>
+              </div>
+              <p class="tnote">Порог 20 — окончателен и обжалованию не подлежит. Независимо от грейда, должности и выслуги лет.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 04 ФОРМИРОВАНИЯ ═══ -->
+      <section id="units" class="sec sec-light">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <div class="sec-kicker m">04 // Элитный контингент</div>
+            <h2>Спецформирования</h2>
+            <p class="sec-lead">Зачисление не автоматическое: отбор, испытательный срок, аттестация. Эти подразделения закрывают задачи, где линейный состав не справляется.</p>
+          </div>
+
+          <div class="units-grid">
+            <article class="unit rv" data-d="1" data-tilt>
+              <div class="unit-emb"><img src="/emblems/fd.png" alt="Эмблема взвода Feld Demons" /></div>
+              <div class="unit-name"><h3>Feld Demons</h3><span class="m">тактический взвод // FD</span></div>
+              <p>Диверсионные атаки в тылу противника, нейтрализация приоритетных целей, прорыв обороны и эвакуация из зон повышенной угрозы.</p>
+              <div class="unit-req m">
+                <span>допуск: уровень корпуса XXX-2+</span>
+                <span>проверка квалификации — каждые 30 дней</span>
+                <span>техника: «Ралли» · «Танкетка» · «СпН» · «Птичка»</span>
+              </div>
+              <div class="unit-ranks m"><i>Командир взвода</i><i>Заместитель</i><i>Младший командир</i><i>Штатный</i><i>Кандидат</i></div>
+            </article>
+
+            <article class="unit unit-inv rv" data-d="2" data-tilt>
+              <div class="unit-emb emb-dark"><img src="/emblems/usf.png" alt="Эмблема подразделения Universal Strike Force" /></div>
+              <div class="unit-name"><h3>Universal Strike Force</h3><span class="m">универсальные бойцы // USF</span></div>
+              <p>Тотальная многозадачность: каждый боец владеет компетенциями всех четырёх корпусов. Группа остаётся боеспособной при любых потерях.</p>
+              <div class="unit-req m">
+                <span>допуск: грейд K3+, корпус XXX-2+</span>
+                <span>тест 13 вопросов + соло-зачистка до 40 минут</span>
+                <span>решение — совет Первого и Второго Командующих</span>
+              </div>
+              <div class="unit-ranks m"><i>Первый Командующий</i><i>Второй Командующий</i><i>Штатный</i><i>Обучающийся</i></div>
+            </article>
+
+            <article class="unit rv" data-d="3" data-tilt>
+              <div class="unit-emb"><img src="/emblems/dms.png" alt="Эмблема подразделения Double MilSec" /></div>
+              <div class="unit-name"><h3>Double MilSec</h3><span class="m">двойная специализация // DMS</span></div>
+              <p>Элитные оперативники с двумя корпусными специализациями на выбор: диверсии, скрытые атаки, рейды малым составом без потери функционала.</p>
+              <div class="unit-req m">
+                <span>допуск: грейд K2+ · рекомендация K4+</span>
+                <span>тренировочный бой — победа со счётом 10</span>
+                <span>знание 75% Регламента и 100% Положения DMS</span>
+              </div>
+              <div class="unit-ranks m"><i>Командир</i><i>Заместитель</i><i>Штатный</i><i>Кандидат — 14 дней</i></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 05 СКИВР ═══ -->
+      <section id="skivr" class="sec sec-light sec-light2">
+        <div class="wrap">
+          <div class="skivr-grid">
+            <div class="skivr-txt">
+              <div class="sec-kicker m rv">05 // Контроль исполнения</div>
+              <h2 class="rv" data-d="1">СКИВР смотрит,<br /><em>чтобы порядок<br />оставался порядком</em></h2>
+              <p class="skivr-lead rv" data-d="2">Служба контроля исполнения и внутренней ревизии — независимое контрольное подразделение. Не корпус, не надстройка — дополнительная специализация, обязательная к безупречности.</p>
+              <div class="skivr-roles">
+                <div class="srole rv" data-d="2">
+                  <h4>Супервайзер</h4><span class="m">K5+</span>
+                  <p>Надзор за командирами формирований и командующим составом. Заключения — напрямую Директорам.</p>
+                </div>
+                <div class="srole rv" data-d="3">
+                  <h4>Инспектор</h4><span class="m">K4+</span>
+                  <p>Контроль Регламента на операциях и учениях, фиксация нарушений, надзор за внешними лицами.</p>
+                </div>
+                <div class="srole rv" data-d="4">
+                  <h4>Ревизор</h4><span class="m">K3+</span>
+                  <p>Аудит документации, пересчёт плюсов и минусов, проверка системы Карбоэкниза.</p>
+                </div>
+                <div class="srole rv" data-d="5">
+                  <h4>Модератор</h4><span class="m">K3+</span>
+                  <p>Порядок на Discord-сервере: пресечение дезинформации, удаление контента, тикеты.</p>
+                </div>
+              </div>
+              <p class="skivr-note m rv" data-d="5">Подчинение — напрямую Генеральному Директору // внутренние проверки состава СКИВР запрещены</p>
+            </div>
+            <div class="skivr-emb rv" data-d="2">
+              <div class="semb-card">
+                <img src="/emblems/skvr.png" alt="Эмблема СКИВР — Служба контроля исполнения и внутренней ревизии" />
+                <div class="semb-cap m">Герб контроля // оттиск 043</div>
+              </div>
+              <div class="skivr-quote m">«Bеспристрастно. Объективно. Документально.»</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 06 КОДЕКС ═══ -->
+      <section id="codex" class="sec">
+        <div class="wrap">
+          <div class="sec-head rv">
+            <div class="sec-kicker m">06 // Железные правила</div>
+            <h2>Кодекс<br /><em>оперативника</em></h2>
+          </div>
+          <div class="codex">
+            <div class="cx-row rv">
+              <span class="cx-num m">01</span>
+              <div class="cx-body"><h3>Безусловное уважение</h3><p>Любое оскорбление — прямое или косвенное, в канале или за спиной — является нарушением.</p></div>
+              <span class="cx-san m">предупреждение → −2</span>
+            </div>
+            <div class="cx-row rv" data-d="1">
+              <span class="cx-num m">02</span>
+              <div class="cx-body"><h3>Приказ не оспаривается</h3><p>Выполнение беспрекословно. Вопросы и обжалование — после завершения миссии.</p></div>
+              <span class="cx-san m">предупреждение → −2</span>
+            </div>
+            <div class="cx-row rv" data-d="2">
+              <span class="cx-num m">03</span>
+              <div class="cx-body"><h3>Никакого самосуда</h3><p>Дедовщина, травля, бойкоты и «неформальные разборки» караются наравне с боевыми провалами.</p></div>
+              <span class="cx-san m">−1 → −3</span>
+            </div>
+            <div class="cx-row rv" data-d="3">
+              <span class="cx-num m">04</span>
+              <div class="cx-body"><h3>Роле-плей запрещён</h3><p>Никакой отыгровки ранений, постановочных диалогов и драматизации — только задача.</p></div>
+              <span class="cx-san m">вплоть до расторжения</span>
+            </div>
+            <div class="cx-row rv" data-d="4">
+              <span class="cx-num m">05</span>
+              <div class="cx-body"><h3>Политика и религия — вне сервера</h3><p>Обсуждение вероисповедальных и политических тем закрыто в любых каналах связи.</p></div>
+              <span class="cx-san m">предупреждение → −2</span>
+            </div>
+            <div class="cx-row cx-hot rv" data-d="5">
+              <span class="cx-num m">06</span>
+              <div class="cx-body"><h3>Враг — только по приказу</h3><p>Инициация огневого контакта без приказа равна предательству интересов Компании.</p></div>
+              <span class="cx-san m">расторжение контракта</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══ 07 ВСТУПЛЕНИЕ ═══ -->
+      <section id="join" class="sec sec-join">
+        <div class="join-glow" aria-hidden="true"></div>
+        <div class="wrap">
+          <div class="sec-head sec-head-c rv">
+            <div class="sec-kicker m">07 // Контракт</div>
+            <h2>Рапорт подан —<br /><em>начинается отсчёт</em></h2>
+          </div>
+
+          <div class="steps">
+            <div class="step rv" data-d="1"><span class="step-n m">01</span><h3>Официальный инвайт</h3><p>Вход только по утверждённой ссылке Генерального Директора. Сторонние приглашения — нарушение.</p></div>
+            <div class="step rv" data-d="2"><span class="step-n m">02</span><h3>Статус «Ку»</h3><p>Учебный грейд. Максимум 7 календарных дней на всю программу первичной подготовки.</p></div>
+            <div class="step rv" data-d="3"><span class="step-n m">03</span><h3>Аттестация</h3><p>Практическая часть и теоретический тест: 10 вопросов Регламента, минимум 7 верных. Пересдача — через 24 часа.</p></div>
+            <div class="step rv" data-d="4"><span class="step-n m">04</span><h3>Грейд K1 и корпус</h3><p>Приказ о присвоении, выбор службы, первый оперативный выход под контролем старшего состава.</p></div>
+          </div>
+
+          <div class="invite hud rv">
+            <div class="invite-l">
+              <div class="invite-lab m">Официальная ссылка в штатный состав</div>
+              <div class="invite-link m" id="inviteText">discord.gg/dGPaKnT99C</div>
+            </div>
+            <div class="invite-btns">
+              <button class="btn btn-ghost" id="copyBtn" type="button">Скопировать ссылку</button>
+              <a class="btn btn-solid" href="https://discord.gg/dGPaKnT99C" target="_blank" rel="noopener">Вступить в ряды</a>
+            </div>
+          </div>
+
+          <div class="join-final m rv">Быть MSF — значит быть системой<span class="jf-cursor">_</span></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══ ФУТЕР ═══ -->
+    <footer>
+      <div class="wrap foot-grid">
+        <div class="foot-brand">
+          <span class="foot-emb"><img src="/emblems/msf.png" alt="Эмблема ЧВК MSF-043" /></span>
+          <div>
+            <b>MSF-043</b>
+            <p class="m">Military Special Forces<br />ратифицировано 23.07.2026</p>
+          </div>
+        </div>
+        <div class="foot-docs">
+          <div class="m foot-h">Документы компании</div>
+          <a href="#doctrine">Регламент ЧВК «MSF-043»</a>
+          <a href="#grades">Положение о системе Карбогрейда</a>
+          <a href="#skivr">Положение о деятельности СКИВР</a>
+          <a href="#units">Положения USF / DMS / Feld Demons</a>
+        </div>
+        <div class="foot-note">
+          <div class="m foot-h">Статус</div>
+          <p>Проект игрового сообщества (Roblox). Не является реальной военной организацией и не пропагандирует насилие.</p>
+          <p class="m foot-copy">© <span id="yy">2026</span> ЧВК «MSF-043». Один состав — один порядок.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" role="status" aria-live="polite">Ссылка скопирована</div>
+  </body>
+</html>
